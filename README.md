@@ -207,15 +207,6 @@ notepad-pro/
 ```bash
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run ESLint
-npm run lint
 ```
 
 ## 🚀 Deployment
@@ -230,49 +221,6 @@ npm run lint
 2. Publish directory: `dist`
 3. Add environment variables in Netlify dashboard
 
-### Manual Deployment
-```bash
-npm run build
-# Upload dist/ folder to your hosting provider
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Development Guidelines
-- Follow ESLint rules
-- Use meaningful commit messages
-- Test your changes thoroughly
-- Update documentation if needed
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Supabase** - For the amazing backend-as-a-service
-- **Tailwind CSS** - For the utility-first CSS framework
-- **Vite** - For the blazing fast build tool
-- **React** - For the powerful frontend library
-- **Lucide** - For the beautiful icons
-
-## 📞 Support
-
-If you have any questions or need help:
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/notepad-pro/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/notepad-pro/discussions)
-- **Email**: your-email@example.com
-
----
 
 **Made with ❤️ using React, Vite, and Supabase**
 
