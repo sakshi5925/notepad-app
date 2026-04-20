@@ -23,6 +23,12 @@ export default function Dashboard() {
     checkUser()
   }, [])
 
+  useEffect(() => {
+    if (user) {
+      fetchNotes(user.id)
+    }
+  }, [showArchived, user])
+
   async function checkUser() {
     const { data } = await supabase.auth.getUser()
     if (!data?.user) {
