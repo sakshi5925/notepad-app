@@ -15,6 +15,7 @@ A modern, feature-rich note-taking application built with React, Vite, and Supab
 
 ### 🔍 Advanced Features
 - **🔎 Real-time Search** - Search through titles and content instantly
+- **🤖 AI Research Assistant** - Search topics and generate note-ready summaries directly inside the app using Gemini
 - **🏷️ Tags System** - Organize notes with color-coded tags
 - **📦 Archive System** - Soft delete with restore functionality
 - **📱 Responsive Design** - Works perfectly on all devices
@@ -71,16 +72,8 @@ A modern, feature-rich note-taking application built with React, Vite, and Supab
    ```env
    VITE_SUPABASE_URL=your_supabase_project_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
+   VITE_GEMINI_API_KEY=your_gemini_api_key
 
-4. **Database Setup**
-   Run these SQL queries in your Supabase SQL Editor:
-
-   ```sql
-   -- Add archived column to notes table
-   ALTER TABLE notes ADD COLUMN archived BOOLEAN DEFAULT false;
-
-   -- Create tags table
    CREATE TABLE IF NOT EXISTS tags (
      id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
      user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -142,6 +135,7 @@ A modern, feature-rich note-taking application built with React, Vite, and Supab
 
 ### Managing Notes
 - **Search** - Use the search bar in the navbar
+- **AI Research** - Use the AI Research Assistant to search a topic and generate note-ready summaries using Gemini
 - **Filter** - Toggle between "Active Notes" and "Archived"
 - **Favorite** - Click ❤️ to mark as favorite
 - **Archive** - Click 📦 to archive (soft delete)
